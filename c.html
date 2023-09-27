@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style the div you want to affect when hovering */
+        .hovered-div {
+            background-color: lightblue;
+        }
+
+        /* Style the div you want to hover over */
+        .hover-trigger:hover + .hovered-div {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-trigger">Hover over me</div>
+    <div class="hovered-div">I change color when you hover</div>
+</body>
+</html>

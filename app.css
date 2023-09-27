@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lora', serif;
+
+}
+
+.flex-nested {
+    width: 100%;
+    height: 100vh;
+}
+
+
+#newsCard .item {
+    transition: transform .5s ease-in-out;
+
+}
+
+#newsCard .item:hover {
+    transform: scale(1.04);
+}
+
+#newsCard .ViewMore {
+    position: relative;
+
+}
+
+#newsCard .ViewMore:hover {
+    color: #A82B30;
+
+    /* background-color: #f4ddde; */
+    cursor: pointer;
+}
+
+#newsCard img {
+    object-fit: cover;
+
+    transition: transform .5s ease-in-out;
+
+}
+
+
+#newsCard .ViewMore::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BC353B;
+    bottom: -2px;
+    left: 0;
+}
+
+#newsCard {
+    position: relative;
+}
+
+#newsCard .owl-theme .custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+#newsCard .owl-theme .custom-nav .owl-prev,
+#newsCard .owl-theme .custom-nav .owl-next {
+    position: absolute;
+    height: 100px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+
+#newsCard.owl-theme .custom-nav .owl-prev i,
+#newsCard .owl-theme .custom-nav .owl-next i {
+    font-size: 2.5rem;
+    color: #cecece;
+}
+
+#newsCard .owl-theme .custom-nav .owl-prev {
+    left: 0;
+}
+
+#newsCard .owl-theme .custom-nav .owl-next {
+    right: 0;
+}
+
+
+#newsCard .HeaderText {
+    color: #BC353B;
+    position: relative;
+
+}
+
+#newsCard .HeaderText::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BC353B;
+    bottom: -2px;
+    left: 0;
+}
+
+#ourValue .HeaderText {
+    color: #BC353B;
+    position: relative;
+
+}
+
+
+#ourValue .HeaderText::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BC353B;
+    bottom: -2px;
+    left: 0;
+}
+
+.ourValueIcon {
+    fill: #BC353B;
+}
+
+.mainTitle {
+    font-size: 1.2rem;
+    color: #BC353B;
+    font-weight: bold;
+}
+
+.subTitle {
+    font-size: 0.8rem;
+    color: black;
+    opacity: 90%;
+}
+
+
+
+.nav-active {
+    position: relative;
+    color: #BC353B;
+
+}
+
+.nav-active::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: -10%;
+    width: 120%;
+    height: 4px;
+    background-color: #BC353B;
+}
+
+header li:hover {
+    color: #BC353B;
+}
+
+.owl-stage-outer {
+    /* height: 100%; */
+}
+
+.interImage {
+    position: relative;
+}
+
+.interImage::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(17, 13, 13, 0.3) 0%, rgb(0, 0, 0.7) 100%);
+}
+
+.owl-tow .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #BC353B;
+    border-radius: 100%;
+    text-align: center;
+    background: #fff;
+
+}
+
+
+.owl-tow .owl-prev,
+.owl-tow .owl-next {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #BC353B;
+    border-radius: 100%;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+}
+
+.owl-tow .owl-prev {
+    left: -45px;
+    top: -150px;
+}
+
+.owl-tow .owl-next {
+    right: -45px;
+    top: -150px;
+}
+
+.mainPageTitle {
+    position: relative;
+    font-weight: bold;
+}
+
+.mainPageTitle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #BC353B;
+    bottom: -10px;
+    left: 0;
+}
+.departmentEffect{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.departmentCard:hover .departmentEffect {
+    opacity: 0.6; /* Change to 60% opacity on hover */
+}
+.departmentCard:hover .departmentEffect {
+    opacity: 0.6; /* Change to 60% opacity on hover */
+}
+.departmentElementSpace{
+    height: 80%;
+    transition: 0.6s;
+}
+.departmentCard{
+    overflow: hidden;
+}
+.departmentCard:hover .departmentElementSpace {
+    height: 10%;
+    transition: 0.6s;
+}
+
+.departmentCard:hover .departmentElementSubTitle {
+    opacity: 100%;
+    transition: 0.6s;
+}
+.departmentCard:hover .departmentElementSubTitle {
+    opacity: 100%;
+    transition: 0.6s;
+}
+
+
+.departmentCard:hover img{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.departmentCard img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.departmentElementSubTitle{
+    opacity: 0;
+    bottom: 10%;
+    left: 0;
+    transition: 0.6s;
+
+}
+
+.departmentElementSubTitle .ViewMore{
+    position: relative;
+    cursor: pointer;
+}
+
+.departmentElementSubTitle .ViewMore:hover{
+    color:#d84b52
+
+}
+
+
+.departmentElementSubTitle .ViewMore::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BC353B;
+    bottom: -2px;
+    left: 0;
+}
+
+
+
+.lastNewsContainor .ViewMore{
+    position: relative;
+    cursor: pointer;
+}
+
+.lastNewsContainor .ViewMore:hover{
+    color:#d84b52
+
+}
+
+
+.lastNewsContainor .ViewMore::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #BC353B;
+    bottom: -2px;
+    left: 0;
+}
+
+
+.agincyContainor{
+    background-color: white;
+    transition: background-color 0.6s ease;
+}
+
+.agincyContainor a,.agincyContainor p{
+    transition: color 0.6s ease;
+}
+
+
+.agincyContainor:hover{
+    background-color: #BC353B;
+    transition: background-color 0.6s ease;
+}
+
+.agincyContainor:hover p,.agincyContainor:hover a,.agincyContainor:hover svg{
+    color: white;
+    fill: white;
+    transition: color 0.7 ease;
+    transition: fill 0.7 ease;
+
+}
+
+.agincyImage{
+    object-fit: cover;
+    transition: 0.6s;
+}
+.agincyImage:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+
+.aboutImage{
+    object-fit: cover;
+}
