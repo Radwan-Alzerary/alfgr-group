@@ -42,29 +42,56 @@
       }
     </style>
   </head>
-  <body class="bg-[#F3F4F9] h-screen relative ">
-    <footer class="absolute bg-white w-full h-96 bottom-0 left-0 grid grid-cols-3" >
-        <div class="w-full h-full p-4 flex flex-col justify-center mx-auto text-right">
-            <p class="text-lg font-bold footerSectionMailTitle">اكتشف شركتنا</p>
-            <p class="text-lg footerSectionSubTitle">الرئيسي</p>
-            <p class="text-lg footerSectionSubTitle">الاقسام</p>
-            <p class="text-lg footerSectionSubTitle">الوضائف</p>
-            <p class="text-lg footerSectionSubTitle">حول الشركة</p>
-            <p class="text-lg footerSectionSubTitle">اتصل بنا</p>
-            <p class="text-lg footerSectionSubTitle">اكتشف شركتنا</p>
-        </div>
-        <div class="w-full h-full p-4 flex flex-col justify-center items-center text-right">
-            <p class="text-lg font-bold footerSectionMailTitle">اكتشف شركتنا</p>
-            <p class="text-lg footerSectionSubTitle">الرئيسي</p>
-            <p class="text-lg footerSectionSubTitle">الاقسام</p>
-            <p class="text-lg footerSectionSubTitle">الوضائف</p>
-            <p class="text-lg footerSectionSubTitle">حول الشركة</p>
-            <p class="text-lg footerSectionSubTitle">اتصل بنا</p>
-            <p class="text-lg footerSectionSubTitle">اكتشف شركتنا</p>
-        </div>
+  <body class="bg-[#F3F4F9] h-screen relative">
+    <footer
+      class="absolute bg-white w-full h-96 bottom-0 left-0 grid grid-cols-3"
+    >
+      <div class="w-full h-full p-4 flex items-center justify-center">
+        <img class="w-1/2" src="hlogo.png" />
+      </div>
 
-        <div class="w-full h-full p-4 flex items-center justify-center"><img class="w-1/2 " src="hlogo.png"></div>
-
+      <div
+        class="w-full h-full p-4 flex flex-col justify-center items-center gap-4 text-left"
+      >
+        <div class="flex flex-col gap-2">
+          <p
+            class="text-xl text-[#BC353B] hove font-extrabold footerSectionMailTitle"
+          >
+            Our Company
+          </p>
+          <p class="text-lg font-bold footerSectionSubTitle">Home</p>
+          <p class="text-lg font-bold footerSectionSubTitle">Section</p>
+          <p class="text-lg font-bold footerSectionSubTitle">Carrer</p>
+          <p class="text-lg font-bold footerSectionSubTitle">About us</p>
+          <p class="text-lg font-bold footerSectionSubTitle">Contact us</p>
+        </div>
+      </div>
+      <div
+        class="w-full h-full p-4 flex flex-col flex-wrap justify-center items-center text-left"
+      >
+        <div class="flex flex-col gap-2">
+          <p
+            class="text-xl text-[#BC353B] font-extrabold footerSectionMailTitle"
+          >
+            Contact
+          </p>
+          <p class="text-lg font-bold footerSectionSubTitle">
+            Adresses : Iraq,Mosul,alzuhor
+          </p>
+          <p class="text-lg font-bold footerSectionSubTitle">
+            Phone number : 0773225323
+          </p>
+          <p class="text-lg font-bold footerSectionSubTitle">
+            Email : company@ymail.com
+          </p>
+          <div class="flex justify-center items-center gap-4 mt-12">
+            <div class="w-14 h-14 bg-[#BC353B]"></div>
+            <div class="w-14 h-14 bg-[#BC353B]"></div>
+            <div class="w-14 h-14 bg-[#BC353B]"></div>
+            <div class="w-14 h-14 hover:bg-red-700 bg-[#BC353B]"></div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script
@@ -125,7 +152,7 @@
       aosAnimation.forEach((aosObject) => {
         observer.observe(aosObject);
       });
-
+      
       AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
