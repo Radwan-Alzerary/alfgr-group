@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="app.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <title>index</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F3F4F9] h-screen relative ">
+    <footer class="absolute bg-white w-full h-96 bottom-0 left-0 grid grid-cols-3" >
+        <div class="w-full h-full p-4 flex flex-col justify-center mx-auto text-right">
+            <p class="text-lg font-bold footerSectionMailTitle">اكتشف شركتنا</p>
+            <p class="text-lg footerSectionSubTitle">الرئيسي</p>
+            <p class="text-lg footerSectionSubTitle">الاقسام</p>
+            <p class="text-lg footerSectionSubTitle">الوضائف</p>
+            <p class="text-lg footerSectionSubTitle">حول الشركة</p>
+            <p class="text-lg footerSectionSubTitle">اتصل بنا</p>
+            <p class="text-lg footerSectionSubTitle">اكتشف شركتنا</p>
+        </div>
+        <div class="w-full h-full p-4 flex flex-col justify-center items-center text-right">
+            <p class="text-lg font-bold footerSectionMailTitle">اكتشف شركتنا</p>
+            <p class="text-lg footerSectionSubTitle">الرئيسي</p>
+            <p class="text-lg footerSectionSubTitle">الاقسام</p>
+            <p class="text-lg footerSectionSubTitle">الوضائف</p>
+            <p class="text-lg footerSectionSubTitle">حول الشركة</p>
+            <p class="text-lg footerSectionSubTitle">اتصل بنا</p>
+            <p class="text-lg footerSectionSubTitle">اكتشف شركتنا</p>
+        </div>
+
+        <div class="w-full h-full p-4 flex items-center justify-center"><img class="w-1/2 " src="hlogo.png"></div>
+
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-one").owlCarousel({
+          loop: true,
+          margin: 60,
+
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+        $(".owl-tow").owlCarousel({
+          loop: true,
+          margin: 60,
+          nav: true,
+
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      const aosAnimation = document.querySelectorAll(".aos");
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+            entry.target.classList.add("aos-animate");
+          } else {
+            entry.target.classList.remove("aos-animate");
+          }
+        });
+      });
+      aosAnimation.forEach((aosObject) => {
+        observer.observe(aosObject);
+      });
+
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>

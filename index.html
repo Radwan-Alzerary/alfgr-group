@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="app.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -188,16 +191,17 @@
         class="pt-10 h-screen p-12 snap-center"
         style="scroll-snap-align: center"
       >
-        <div class="flex justify-center mt-10 items-center">
+        <div data-aos="fade-up" class="flex justify-center mt-10 items-center">
           <a class="HeaderText text-2xl font-bold text-center mb-4"
             >Last News</a
           >
         </div>
         <div
-          class="owl-tow owl-carousel owl-theme flex-nested font-bold"
+          data-aos="fade-up"
+          class="owl-tow owl-carousel owl-theme flex-nested font-bold aos"
           id="#carousel1"
         >
-          <div class="item">
+          <div>
             <img src="1.jpg" alt="img" class="hover:opacity-70 h-60" />
             <div class="bg-white h-60 p-4 flex flex-col">
               <div class="h-[20%]">
@@ -518,88 +522,22 @@
 
       <footer class="bg-white w-full" style="scroll-snap-align: center">
         <div class="mx-auto w-full">
-          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Company
-              </h2>
-              <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">About</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Careers</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Brand Center</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Blog</a>
-                </li>
-              </ul>
+          <div
+            class="grid h-96 grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-8 px-4 py-6"
+          >
+            <div class="w-full h-full">
+              <img src="hlogo.png" />
             </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Help center
-              </h2>
-              <ul class="text-gray-500 -400 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Discord Server</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Twitter</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Facebook</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Legal
-              </h2>
-              <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Privacy Policy</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Licensing</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Download
-              </h2>
-              <ul class="text-gray-500 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">iOS</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Android</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Windows</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">MacOS</a>
-                </li>
-              </ul>
-            </div>
+            <div class="bg-black w-full h-full"></div>
+            <div class="bg-black w-full h-full"></div>
           </div>
           <div
-            class="px-4 py-6 bg-gray-100 w-full md:flex md:items-center md:justify-between"
+            class="px-4 py-4 bg-gray-100 w-full md:flex md:items-center md:justify-between"
           >
-            <span class="text-sm text-gray-500 sm:text-center"
-              >© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
+            <div class="text-sm text-gray-500 sm:text-center">
+              © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
               Reserved.
-            </span>
+            </div>
             <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
               <a href="#" class="text-gray-400 hover:text-gray-900">
                 <svg
@@ -739,6 +677,23 @@
           },
         });
       });
+    </script>
+    <script>
+      const aosAnimation = document.querySelectorAll(".aos");
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+            entry.target.classList.add("aos-animate");
+          } else {
+            entry.target.classList.remove("aos-animate");
+          }
+        });
+      });
+      aosAnimation.forEach((aosObject) => {
+        observer.observe(aosObject);
+      });
+
+      AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
