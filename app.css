@@ -370,3 +370,7 @@ header li:hover {
     height: 12rem;
     transition: 0.4s;
 }
+.sidebar-active{
+    background-color: #BC353B;
+    color: white;
+}
