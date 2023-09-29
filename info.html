@@ -55,10 +55,9 @@
     </style>
   </head>
   <body class="bg-[#F3F4F9] h-screen">
-
     <section>
       <div
-        class="h-48 w-full relative flex justify-between"
+        class="h-48 w-full bg-black  relative flex justify-between"
         style="
           background-image: url('4.jpg');
           background-repeat: no-repeat;
@@ -66,130 +65,119 @@
           background-size: cover;
         "
       >
-        <div class="h-full w-1/3 flex pl-8 items-center z-20">
-          <img class="h-2/3" src="logo2.png" />
+        <div class="h-full w-[35%] lg:w-[15%] flex pl-8 items-center z-20">
+          <img class="h-1/2 lg:h-2/3" src="logo2.png" />
         </div>
-        <div class="h-full w-1/3 flex flex-col justify-center z-20">
-          <a class="text-[white] text-3xl font-bold">Finance department</a>
-          <a class="text-[white] text-md"
+        <div class="h-full w-[65%] lg:w-[85%] gap-1 flex flex-col justify-center z-20">
+          <a class="text-[white] text-xl lg:text-3xl font-bold">Finance department</a>
+          <a class="text-[white] text-sm opacity-90 lg:text-md"
             >Finance department Finance department Finance department</a
           >
         </div>
-        <div class="h-full w-1/3 flex justify-center items-center z-20"></div>
         <div
           class="w-full h-full absolute bottom-0 left-0 bg-black opacity-80"
         ></div>
       </div>
     </section>
-    <section class="w-full h-full flex">
-      <div id="navbar" class="fixed h-screen bg-white h-full flex flex-col h-full">
-        <div class="w-full flex h-12">
-          <div
-            class="flex flex-col justify-center p-4 w-full h-full bg-gray-50"
-          >
-            <a class="text-md font-bold">Sama Company</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            id="history"
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">History</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            id="companyMassage"
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">Company Massage</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            id="companyVision"
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">Company Vision</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            id="WorkMember"
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">Work Member</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            id="department"
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">department</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            id="pageurl"
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">url</a>
-          </div>
-        </div>
-        <div class="w-full flex h-12">
-          <div
-            class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
-          >
-            <a class="text-md">Project Image</a>
-          </div>
+    <div
+      id="navbar"
+      class="relative lg:fixed md:relative sm:relative bg-white flex flex-col rounded"
+    >
+      <div class="w-full flex h-12">
+        <div class="flex flex-col justify-center p-4 w-full h-full bg-gray-50">
+          <a class="text-md font-bold">Sama Company</a>
         </div>
       </div>
-      <div class="w-[12%]"></div>
 
-      <div class="w-[80%] flex flex-col gap-8 h-full p-6">
+      <div class="w-full flex h-12">
+        <div
+          id="history"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">History</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="companyMassage"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company Massage</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="companyVision"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company Vision</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="department"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">department</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="pageurl"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">url</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="projectImage"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Project Image</a>
+        </div>
+      </div>
+    </div>
 
+    <section class="w-full h-full flex rounded-full">
+      <div class=" w-0 lg:w-[16%]"></div>
 
-
-        <div class="flex gap-4 w-full " >
-          <i class="h-20 text-[#BC353B] fa-regular fa-building"></i>
-          <div id="historyRich" class="w-[100%]  ">
+      <div class="w-[100%] lg:w-[80%] flex flex-col h-full p-6">
+        <div class="flex gap-4 w-full">
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-building"
+          ></i>
+          <div id="historyRich" class="w-[100%]">
             <div>
-              <a  class="uppercase text-[#BC353B] text-2xl font-semibold text-[#222]"
+              <a
+                class="uppercase text-[#BC353B] text-2xl font-semibold text-[#222]"
                 >History</a
               >
             </div>
             <div>
-              <a>
-                Jihan Motors was founded in 1997 and is part of the Jihan Group,
-                which has a strong presence throughout the country with
-                operations in banking, insurance, education, construction, real
-                estate, transportation, logistics, food and beverages, heavy
-                machinery, and petroleum. It was the first private company to
-                import Toyota cars from Japan through Tomine Company in 2004,
-                importing approximately 70,000 Toyota cars to Iraq. It is the
-                first and leading provider of the Toyota Beige Taxi project and
-                the Farmers' Union project in Kurdistan, successfully
-                implementing both projects. It owns a network of 9 facilities
-                affiliated with Toyota in Iraq, 4 of which are authorized Toyota
-                dealerships (3S facilities - Sales, Service & Spare Parts), from
-                Toyota Motors, Japan.
+              <a class="leading-8 font-light">
+                So a few weeks ago we released a first-party Tailwind CSS
+                language mode as part of our Tailwind CSS IntelliSense
+                extension, which builds on the built-in CSS language mode to add
+                Tailwind-specific syntax highlighting and fix the lint warnings
+                you’d usually see, without losing any of CSS IntelliSense
+                features you do want to keep.
               </a>
             </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
           </div>
         </div>
-        <div class="flex gap-4  w-full" id="companyMassageRich">
-          <i class="h-20 text-[#BC353B] fa-regular fa-building"></i>
 
-          <div class="w-[100%] ">
+        <div class="flex gap-4 w-full" id="companyMassageRich">
+          <i class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-message"></i>
+          <div class="w-[100%]">
             <div>
               <a class="uppercase text-2xl font-semibold text-[#BC353B]"
                 >Company Massage</a
               >
             </div>
             <div>
-              <a>
+              <a class="leading-8 font-light">
                 Jihan Motors was founded in 1997 and is part of the Jihan Group,
                 which has a strong presence throughout the country with
                 operations in banking, insurance, education, construction, real
@@ -205,140 +193,98 @@
                 Toyota Motors, Japan.
               </a>
             </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
           </div>
         </div>
-        <div class="flex w-full" id="companyVisionRich">
-          <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
-          <div class="w-[100%] p-6">
+        <div class="flex w-full gap-4" id="companyVisionRich">
+          <i class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-eye"></i>
+          <div class="w-[100%]">
             <div>
               <a class="uppercase text-2xl font-semibold text-[#BC353B]"
-                >History</a
+                >Company Vision</a
               >
             </div>
             <div>
-              <a>
+              <a class="leading-8 font-light">
                 Jihan Motors was founded in 1997 and is part of the Jihan Group,
                 which has a strong presence throughout the country with
                 operations in banking, insurance, education, construction, real
                 estate, transportation, logistics, food and beverages, heavy
-                machinery, and petroleum. It was the first private company to
-                import Toyota cars from Japan through Tomine Company in 2004,
-                importing approximately 70,000 Toyota cars to Iraq. It is the
-                first and leading provider of the Toyota Beige Taxi project and
-                the Farmers' Union project in Kurdistan, successfully
-                implementing both projects. It owns a network of 9 facilities
-                affiliated with Toyota in Iraq, 4 of which are authorized Toyota
-                dealerships (3S facilities - Sales, Service & Spare Parts), from
-                Toyota Motors, Japan.
+                machinery, and petroleum
               </a>
             </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
           </div>
         </div>
-        <div class="flex w-full" id="workMemberRich">
+        <div class="flex gap-4 w-full" id="departmentRich">
           <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
-          <div class="w-[100%] p-6">
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-solid fa-location-dot"
+          ></i>
+
+          <div class="w-[100%]">
             <div>
               <a class="uppercase text-2xl font-semibold text-[#BC353B]"
-                >History</a
+                >Dapartment</a
               >
             </div>
-            <div>
-              <a>
-                Jihan Motors was founded in 1997 and is part of the Jihan Group,
-                which has a strong presence throughout the country with
-                operations in banking, insurance, education, construction, real
-                estate, transportation, logistics, food and beverages, heavy
-                machinery, and petroleum. It was the first private company to
-                import Toyota cars from Japan through Tomine Company in 2004,
-                importing approximately 70,000 Toyota cars to Iraq. It is the
-                first and leading provider of the Toyota Beige Taxi project and
-                the Farmers' Union project in Kurdistan, successfully
-                implementing both projects. It owns a network of 9 facilities
-                affiliated with Toyota in Iraq, 4 of which are authorized Toyota
-                dealerships (3S facilities - Sales, Service & Spare Parts), from
-                Toyota Motors, Japan.
-              </a>
+            <div class="my-4">
+              <img class="w-1/2 h-1/2" src="10.jpg" />
             </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
           </div>
         </div>
-        <div class="flex w-full" id="departmentRich">
+        <div class="flex gap-4 w-full" id="urlRich">
           <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
-          <div class="w-[100%] p-6">
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-window-restore"
+          ></i>
+
+          <div class="">
             <div>
-              <a class="uppercase text-2xl font-semibold text-[#BC353B]"
-                >History</a
+              <a class="uppercase text-2xl font-semibold text-[#BC353B]">URL</a>
+            </div>
+            <div
+              class="h-10 flex  cursor-pointer my-4 items-center bg-white hover:opacity-80 rounded-full"
+            >
+              <div class="p-4  flex gap-4 items-center">
+                <i class="fa-solid fa-globe text-[#BC353B]"></i>
+                <a class="w-24 lg:w-full overflow-hidden text-black text-md"
+                  >https://fontawesome.com/docs/web/style/size</a
+                >
+              </div>
+              <div
+                class="w-14 flex justify-center items-center h-full rounded-r-full bg-[#BC353B]"
               >
+                <i
+                  class="fa-solid text-white fa-arrow-up-right-from-square"
+                ></i>
+              </div>
             </div>
-            <div>
-              <a>
-                Jihan Motors was founded in 1997 and is part of the Jihan Group,
-                which has a strong presence throughout the country with
-                operations in banking, insurance, education, construction, real
-                estate, transportation, logistics, food and beverages, heavy
-                machinery, and petroleum. It was the first private company to
-                import Toyota cars from Japan through Tomine Company in 2004,
-                importing approximately 70,000 Toyota cars to Iraq. It is the
-                first and leading provider of the Toyota Beige Taxi project and
-                the Farmers' Union project in Kurdistan, successfully
-                implementing both projects. It owns a network of 9 facilities
-                affiliated with Toyota in Iraq, 4 of which are authorized Toyota
-                dealerships (3S facilities - Sales, Service & Spare Parts), from
-                Toyota Motors, Japan.
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flex w-full" id="urlRich">
-          <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
-          <div class="w-[100%] p-6">
-            <div>
-              <a class="uppercase text-2xl font-semibold text-[#BC353B]"
-                >History</a
-              >
-            </div>
-            <div>
-              <a>
-                Jihan Motors was founded in 1997 and is part of the Jihan Group,
-                which has a strong presence throughout the country with
-                operations in banking, insurance, education, construction, real
-                estate, transportation, logistics, food and beverages, heavy
-                machinery, and petroleum. It was the first private company to
-                import Toyota cars from Japan through Tomine Company in 2004,
-                importing approximately 70,000 Toyota cars to Iraq. It is the
-                first and leading provider of the Toyota Beige Taxi project and
-                the Farmers' Union project in Kurdistan, successfully
-                implementing both projects. It owns a network of 9 facilities
-                affiliated with Toyota in Iraq, 4 of which are authorized Toyota
-                dealerships (3S facilities - Sales, Service & Spare Parts), from
-                Toyota Motors, Japan.
-              </a>
-            </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
           </div>
         </div>
         <div class="flex w-full" id="projectImageRich">
           <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
           <div class="w-[100%] p-6">
             <div>
+              <i
+                class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-image"
+              ></i>
+              
               <a class="uppercase text-2xl font-semibold text-[#BC353B]"
-                >History</a
+                >Project Image</a
               >
             </div>
-            <div>
-              <a>
-                Jihan Motors was founded in 1997 and is part of the Jihan Group,
-                which has a strong presence throughout the country with
-                operations in banking, insurance, education, construction, real
-                estate, transportation, logistics, food and beverages, heavy
-                machinery, and petroleum. It was the first private company to
-                import Toyota cars from Japan through Tomine Company in 2004,
-                importing approximately 70,000 Toyota cars to Iraq. It is the
-                first and leading provider of the Toyota Beige Taxi project and
-                the Farmers' Union project in Kurdistan, successfully
-                implementing both projects. It owns a network of 9 facilities
-                affiliated with Toyota in Iraq, 4 of which are authorized Toyota
-                dealerships (3S facilities - Sales, Service & Spare Parts), from
-                Toyota Motors, Japan.
-              </a>
+            <div class="my-4 grid grid-cols-1 lg:grid-cols-3 w-full gap-4">
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="2.jpg" />
+              <img class="w-full h-56 object-cover" src="4.jpg" />
+              <img class="w-full h-56 object-cover" src="5.jpg" />
+              <img class="w-full h-56 object-cover" src="3.jpg" />
+              <img class="w-full h-56 object-cover" src="2.jpg" />
+              <img class="w-full h-56 object-cover" src="6.jpg" />
+              <img class="w-full h-56 object-cover" src="7.jpg" />
             </div>
           </div>
         </div>
@@ -362,22 +308,18 @@
           addClassTo: $("#companyMassage"),
         },
         { element: $("#companyVisionRich"), addClassTo: $("#companyVision") },
-        { element: $("#workMemberRich"), addClassTo: $("#WorkMember") },
         { element: $("#departmentRich"), addClassTo: $("#department") },
         { element: $("#urlRich"), addClassTo: $("#pageurl") },
-        { element: $("#projectImageRich"), addClassTo: $("#project") },
+        { element: $("#projectImageRich"), addClassTo: $("#projectImage") },
       ];
 
       // Function to handle the scroll event
       function handleScroll() {
-
-
-        
         let activeSection = null;
 
         // Check which section is currently in the viewport
         for (const section of sections) {
-          if ((isElementInViewport)(section.element[0])) {
+          if (isElementInViewport(section.element[0])) {
             activeSection = section;
             break;
           }
@@ -407,7 +349,6 @@
       // Add a scroll event listener using jQuery
       $(window).on("scroll", handleScroll);
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
 </html>

@@ -373,4 +373,11 @@ header li:hover {
 .sidebar-active{
     background-color: #BC353B;
     color: white;
+    transition: 0.6s;
+}
+.size-active{
+    background-color: #BC353B;
+    color: white;
+    border: none;
+    transition: 0.6s;
 }
