@@ -362,3 +362,11 @@ header li:hover {
 .aboutImage{
     object-fit: cover;
 }
+.jopDetails{
+    transition: 0.4s;
+}
+
+.jopMain:hover .jopDetails{
+    height: 12rem;
+    transition: 0.4s;
+}

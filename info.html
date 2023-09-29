@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="app.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <title>index</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F3F4F9] h-screen overflow-hidden">
+    <header style="position: sticky; width: 100%; top: 0; z-index: 100">
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 h-full"
+        style="height: 70px"
+      >
+        <div
+          class="flex flex-wrap justify-between h-full items-center mx-auto max-w-screen-xl"
+        >
+          <a href="/" class="flex items-center">
+            <img src="/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+          </a>
+          <div class="items-center lg-hidden md-flex sm-flex">
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden h-full justify-between items-right w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex h-full flex-col mt-4 gap-12 font-semibold lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Main section</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="http://127.0.0.1:5500/categoty.html#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Category</a
+                >
+              </li>
+              <li class="flex justify-center items-center nav-active">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Last News</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Carrer</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >About us</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div
+        class="h-48 w-full relative flex justify-between"
+        style="
+          background-image: url('4.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        "
+      >
+      <div class="h-full w-1/3 flex justify-center items-center z-20"><img class="h-2/3" src="logo2.png"></div>
+      <div class="h-full w-1/3 flex flex-col justify-center z-20">
+        <a class="text-[white] text-3xl font-bold">Finance department</a>
+        <a class="text-[white] text-md">Finance department Finance department Finance department</a>
+    </div>
+      <div class="h-full w-1/3 flex justify-center items-center z-20"></div>
+        <div class="w-full h-full absolute bottom-0 left-0 bg-black opacity-80"></div>
+      </div>
+    </section>
+    <section class="w-full h-full flex">
+        <div class="w-1/5 bg-white h-full flex flex-col ">
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full  h-full bg-gray-50">
+                    <a class="text-lg font-bold">Sama Company</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">History</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">Company Massage</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">Company Vision</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">Work Member</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">department</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">url</a>
+                </div>
+            </div>
+            <div class="w-full flex  h-12 ">
+                <div class="flex flex-col justify-center p-4 w-full h-full border-[1px] cursor-pointer hover:text-white hover:bg-[#BC353B]">
+                    <a class="text-lg">Project Image</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="w-2/3 h-full"></div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-one").owlCarousel({
+          loop: true,
+          margin: 60,
+
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+        $(".owl-tow").owlCarousel({
+          loop: true,
+          margin: 60,
+          nav: true,
+
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      const aosAnimation = document.querySelectorAll(".aos");
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+            entry.target.classList.add("aos-animate");
+          } else {
+            entry.target.classList.remove("aos-animate");
+          }
+        });
+      });
+      aosAnimation.forEach((aosObject) => {
+        observer.observe(aosObject);
+      });
+
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>
