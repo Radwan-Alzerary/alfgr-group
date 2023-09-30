@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="app.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>index</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F3F4F9] h-screen">
+    <section>
+      <div
+        class="h-48 w-full bg-black relative flex justify-between"
+        style="
+          background-image: url('4.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        "
+      >
+        <div class="h-full w-[35%] lg:w-[15%] flex pl-8 items-center z-20">
+          <img class="h-1/2 lg:h-2/3" src="logo2.png" />
+        </div>
+        <div
+          class="h-full w-[65%] lg:w-[85%] gap-1 flex flex-col justify-center z-20"
+        >
+          <a class="text-[white] text-xl lg:text-3xl font-bold"
+            >Finance department</a
+          >
+          <a class="text-[white] text-sm opacity-90 lg:text-md"
+            >The finance department manages the company's financial affairs and
+            accounts.
+          </a>
+        </div>
+        <div
+          class="w-full h-full absolute bottom-0 left-0 bg-black opacity-80"
+        ></div>
+      </div>
+    </section>
+    <div
+      id="navbar"
+      class="relative lg:fixed md:relative sm:relative bg-white flex flex-col rounded"
+    >
+      <div class="w-full flex h-12">
+        <div class="flex flex-col justify-center p-4 w-full h-full bg-gray-50">
+          <a class="text-md font-bold">Sama Company</a>
+        </div>
+      </div>
+
+      <div class="w-full flex h-12">
+        <div
+          id="history"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company Target</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="companyMassage"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company Massage</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="companyVision"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company Vision</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="department"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">department</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="pageurl"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company url</a>
+        </div>
+      </div>
+      <div class="w-full flex h-12">
+        <div
+          id="projectImage"
+          class="flex flex-col justify-center p-4 w-full h-full border-y-[1px] border-gray-50 cursor-pointer hover:text-white hover:bg-[#BC353B]"
+        >
+          <a class="text-md">Company Image</a>
+        </div>
+      </div>
+    </div>
+    <section class="w-full h-full flex rounded-full">
+      <div class="w-0 lg:w-[16%]"></div>
+
+      <div class="w-[100%] lg:w-[80%] flex flex-col h-full p-6">
+        <div class="flex gap-4 w-full">
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-building"
+          ></i>
+          <div id="historyRich" class="w-[100%]">
+            <div>
+              <a
+                class="uppercase text-[#BC353B] text-2xl font-semibold text-[#222]"
+                >Company Target</a
+              >
+            </div>
+            <div>
+              <a class="leading-8 font-light">
+                Our goal is to continuously deliver high-quality products,
+                expand our agency network and market reach, contribute to
+                economic growth and prosperity in Iraq, and provide a safe
+                working environment while empowering our employees.
+              </a>
+            </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
+          </div>
+        </div>
+
+        <div class="flex gap-4 w-full " id="companyMassageRich">
+          <i class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-message"></i>
+          <div class="w-[100%]">
+            <div>
+              <a class="uppercase text-2xl font-semibold text-[#BC353B]"
+                >Company Massage</a
+              >
+            </div>
+            <div>
+              <a class="leading-8 font-light">
+                We are committed to providing a wide range of high-quality
+                products, ensuring customer satisfaction, actively participating
+                in social and economic development in Iraq, all while achieving
+                sustainable growth.
+              </a>
+            </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
+          </div>
+        </div>
+        <div class="flex w-full gap-4" id="companyVisionRich">
+          <i class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-eye"></i>
+          <div class="w-[100%]">
+            <div>
+              <a class="uppercase text-2xl font-semibold text-[#BC353B]"
+                >Company Vision</a
+              >
+            </div>
+            <div>
+              <a class="leading-8 font-light">
+                Our aim is to become a leading company in providing essential
+                foodstuffs and household products in Iraq, while enhancing the
+                quality of life for our communities.
+              </a>
+            </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
+          </div>
+        </div>
+        <div class="flex gap-4 w-full" id="departmentRich">
+          <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-solid fa-location-dot"
+          ></i>
+
+          <div class="w-[100%]">
+            <div>
+              <a class="uppercase text-2xl font-semibold text-[#BC353B]"
+                >Dapartment</a
+              >
+            </div>
+            <div class="my-4">
+              <img class="w-full lg:w-2/3 h-2/3" src="10.jpg" />
+            </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
+          </div>
+        </div>
+        <div class="flex gap-4 w-full" id="urlRich">
+          <!-- <div class="w-[10%]"><img class="w-full" src="logo2.png"></div> -->
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-window-restore"
+          ></i>
+
+          <div class="">
+            <div>
+              <a class="uppercase text-2xl font-semibold text-[#BC353B]">Company url</a>
+            </div>
+            <div
+              class="h-10 flex cursor-pointer my-4 items-center bg-white hover:opacity-80 rounded-full"
+            >
+              <div class="p-4 flex gap-4 items-center">
+                <i class="fa-solid fa-globe text-[#BC353B]"></i>
+                <a
+                  class="w-36 lg:w-full md:w-full overflow-hidden text-black text-md"
+                  >https://www.sama-food.com/Ar</a
+                >
+              </div>
+              <div
+                class="w-14 flex justify-center items-center h-full rounded-r-full bg-[#BC353B]"
+              >
+                <i
+                  class="fa-solid text-white fa-arrow-up-right-from-square"
+                ></i>
+              </div>
+            </div>
+            <div class="w-full h-[1px] my-8 opacity-5 bg-black"></div>
+          </div>
+        </div>
+        <div class="flex gap-4 w-full" id="projectImageRich">
+          <i
+            class="fa-2xl text-[#BC353B] opacity-80 fa-regular fa-window-restore"
+          ></i>
+
+          <div>
+            <div>
+              <a class="uppercase text-2xl font-semibold text-[#BC353B]"
+                >Company Image</a
+              >
+            </div>
+            <div class="my-4 grid grid-cols-1 lg:grid-cols-3 w-full gap-4">
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+              <img class="w-full h-56 object-cover" src="1.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Function to check if the element is in the viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+      const sections = [
+        { element: $("#historyRich"), addClassTo: $("#history") },
+        {
+          element: $("#companyMassageRich"),
+          addClassTo: $("#companyMassage"),
+        },
+        { element: $("#companyVisionRich"), addClassTo: $("#companyVision") },
+        { element: $("#departmentRich"), addClassTo: $("#department") },
+        { element: $("#urlRich"), addClassTo: $("#pageurl") },
+        { element: $("#projectImageRich"), addClassTo: $("#projectImage") },
+      ];
+
+      // Function to handle the scroll event
+      function handleScroll() {
+        let activeSection = null;
+
+        // Check which section is currently in the viewport
+        for (const section of sections) {
+          if (isElementInViewport(section.element[0])) {
+            activeSection = section;
+            break;
+          }
+        }
+
+        // Remove the 'sidebar-active' class from all sections
+        for (const section of sections) {
+          section.addClassTo.removeClass("sidebar-active");
+        }
+
+        // Add the 'sidebar-active' class to the active section
+        if (activeSection) {
+          activeSection.addClassTo.addClass("sidebar-active");
+        }
+      }
+      sections.forEach((section) => {
+        section.addClassTo.click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: section.element.offset().top - 6,
+            },
+            600
+          );
+        });
+      });
+
+      // Add a scroll event listener using jQuery
+      $(window).on("scroll", handleScroll);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>
