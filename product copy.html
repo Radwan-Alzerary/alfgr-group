@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="app.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F3F4F9]">
+    <header
+      class="bg-white"
+      style="position: sticky; width: 100%; top: 0; z-index: 100"
+    >
+      <nav class="px-4 lg:px-6 h-full" style="height: 70px">
+        <div
+          class="flex flex-wrap justify-between h-full items-center mx-auto max-w-screen-xl"
+        >
+          <a href="/" class="flex items-center">
+            <img src="/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+          </a>
+          <div class="items-center lg-hidden md-flex sm-flex">
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden h-full justify-between items-right w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex h-full flex-col mt-4 gap-12 font-semibold lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Main section</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="http://127.0.0.1:5500/categoty.html#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Category</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Last News</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Carrer</a
+                >
+              </li>
+              <li class="flex justify-center items-center">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >About us</a
+                >
+              </li>
+              <li class="flex justify-center items-center nav-active">
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0"
+                  aria-current="page"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="w-full h-full">
+      <div class="w-full h-full relative">
+        <div class="w-full relative">
+          <img
+            class="w-full h-full object-cover"
+            src="https://www.zergroup.com/upload/kategori/temp/resim-728116_w1763_h360.jpg"
+          />
+        </div>
+        <div class="w-full h-12 bg-white px-8 items-center flex">
+          <span class="text-[#BC353B] text-xl font-bold">Zer Product</span>
+        </div>
+
+        <div class="h-72 z-20 w-[100%] lg:w-[100%]">
+          <div class="w-full rounded p-8">
+            <span class="text-lg font-medium">We're committed to your privacy. HubSpot uses the information you
+              provide to us to contact you about our relevant content, products,
+              and services. You may unsubscribe from these communications at any
+              time.
+            </span>
+            <br />
+            <br />
+            <section
+              id="Projects"
+              class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+            >
+              <div
+                class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+              >
+                <div class="h-80 w-72 flex justify-center items-center">
+                  <img
+                    src="food1.png"
+                    alt="Product"
+                    class="h-[80%] object-cover rounded-t-xl"
+                  />
+                </div>
+                <div class="px-4 py-3 w-72">
+                  <span class="text-gray-400 mr-3 uppercase text-xs"
+                    >Brand</span
+                  >
+                  <p
+                    class="text-lg font-bold text-black truncate block capitalize"
+                  >
+                    Product Name
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+              >
+                <div class="h-80 w-72 flex justify-center items-center">
+                  <img
+                    src="food2.png"
+                    alt="Product"
+                    class="h-[80%] object-cover rounded-t-xl"
+                  />
+                </div>
+                <div class="px-4 py-3 w-72">
+                  <span class="text-gray-400 mr-3 uppercase text-xs"
+                    >Brand</span
+                  >
+                  <p
+                    class="text-lg font-bold text-black truncate block capitalize"
+                  >
+                    Product Name
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+              >
+                <div class="h-80 w-72 flex justify-center items-center">
+                  <img
+                    src="food1.png"
+                    alt="Product"
+                    class="h-[80%] object-cover rounded-t-xl"
+                  />
+                </div>
+                <div class="px-4 py-3 w-72">
+                  <span class="text-gray-400 mr-3 uppercase text-xs"
+                    >Brand</span
+                  >
+                  <p
+                    class="text-lg font-bold text-black truncate block capitalize"
+                  >
+                    Product Name
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
+              >
+                <div class="h-80 w-72 flex justify-center items-center">
+                  <img
+                    src="food1.png"
+                    alt="Product"
+                    class="h-[80%] object-cover rounded-t-xl"
+                  />
+                </div>
+                <div class="px-4 py-3 w-72">
+                  <span class="text-gray-400 mr-3 uppercase text-xs"
+                    >Brand</span
+                  >
+                  <p
+                    class="text-lg font-bold text-black truncate block capitalize"
+                  >
+                    Product Name
+                  </p>
+                </div>
+              </div>
+            </section>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </body>
+</html>
